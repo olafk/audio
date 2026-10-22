@@ -1,0 +1,64 @@
+[
+ {
+  "id": 50,
+  "type": "PipeWire:Interface:Device",
+  "info": {
+   "props": {
+    "device.name": "alsa_card.usb-Vendor_Interface-00",
+    "device.api": "alsa"
+   },
+   "params": {
+    "EnumProfile": [
+     {
+      "index": 0,
+      "name": "off"
+     },
+     {
+      "index": 1,
+      "name": "output:multichannel-output+input:multichannel-input"
+     },
+     {
+      "index": 2,
+      "name": "pro-audio"
+     }
+    ],
+    "Profile": [
+     {
+      "index": 1,
+      "name": "output:multichannel-output+input:multichannel-input"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 70,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "alsa_input.usb-Vendor_Interface-00.multichannel-input",
+    "node.description": "Interface Multichannel",
+    "media.class": "Audio/Source",
+    "device.api": "alsa",
+    "device.id": 50,
+    "audio.channels": 4,
+    "audio.position": "[ FL FR RL RR ]"
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 4,
+      "position": [
+       "FL",
+       "FR",
+       "RL",
+       "RR"
+      ]
+     }
+    ]
+   }
+  }
+ }
+]

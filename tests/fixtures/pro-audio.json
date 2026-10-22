@@ -1,0 +1,233 @@
+[
+ {
+  "id": 50,
+  "type": "PipeWire:Interface:Device",
+  "info": {
+   "props": {
+    "device.name": "alsa_card.usb-Vendor_Interface-00",
+    "device.api": "alsa"
+   },
+   "params": {
+    "EnumProfile": [
+     {
+      "index": 0,
+      "name": "off"
+     },
+     {
+      "index": 1,
+      "name": "output:multichannel-output+input:multichannel-input"
+     },
+     {
+      "index": 2,
+      "name": "pro-audio"
+     }
+    ],
+    "Profile": [
+     {
+      "index": 2,
+      "name": "pro-audio"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 60,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "alsa_input.usb-Vendor_Interface-00.pro-input-0",
+    "node.description": "Interface Pro 0",
+    "media.class": "Audio/Source",
+    "device.api": "alsa",
+    "device.id": 50,
+    "audio.channels": 4,
+    "audio.position": "AUX0,AUX1,AUX2,AUX3"
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 4,
+      "position": [
+       "AUX0",
+       "AUX1",
+       "AUX2",
+       "AUX3"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 61,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "alsa_input.usb-Vendor_Interface-00.pro-input-1",
+    "node.description": "Interface Pro 1",
+    "media.class": "Audio/Source",
+    "device.api": "alsa",
+    "device.id": 50
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 16,
+      "position": [
+       "AUX0",
+       "AUX1",
+       "AUX2",
+       "AUX3",
+       "AUX4",
+       "AUX5",
+       "AUX6",
+       "AUX7",
+       "AUX8",
+       "AUX9",
+       "AUX10",
+       "AUX11",
+       "AUX12",
+       "AUX13",
+       "AUX14",
+       "AUX15"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 62,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "alsa_output.usb-Vendor_Interface-00.pro-output-0",
+    "node.description": "Interface Out",
+    "media.class": "Audio/Sink",
+    "device.api": "alsa",
+    "device.id": 50,
+    "audio.channels": 4,
+    "audio.position": "AUX0,AUX1,AUX2,AUX3"
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 4,
+      "position": [
+       "AUX0",
+       "AUX1",
+       "AUX2",
+       "AUX3"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 63,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "alsa_input.pci-0000_00_1f.3.analog-stereo",
+    "node.description": "Built-in Audio",
+    "media.class": "Audio/Source",
+    "device.api": "alsa",
+    "device.id": 50,
+    "audio.channels": 2,
+    "audio.position": "AUX0,AUX1"
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 2,
+      "position": [
+       "AUX0",
+       "AUX1"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 64,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "channel_picker",
+    "node.description": "Interface Ch 4/6/7",
+    "media.class": "Audio/Source",
+    "device.api": null,
+    "device.id": 50,
+    "audio.channels": 3,
+    "audio.position": "AUX0,AUX1,AUX2"
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 3,
+      "position": [
+       "AUX0",
+       "AUX1",
+       "AUX2"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 65,
+  "type": "PipeWire:Interface:Node",
+  "info": {
+   "props": {
+    "node.name": "fake16",
+    "node.description": "Fake",
+    "media.class": "Audio/Source",
+    "device.api": null,
+    "device.id": 50,
+    "audio.channels": 16,
+    "audio.position": "AUX0,AUX1,AUX2,AUX3,AUX4,AUX5,AUX6,AUX7,AUX8,AUX9,AUX10,AUX11,AUX12,AUX13,AUX14,AUX15"
+   },
+   "params": {
+    "EnumFormat": [
+     {
+      "mediaType": "audio",
+      "mediaSubtype": "raw",
+      "channels": 16,
+      "position": [
+       "AUX0",
+       "AUX1",
+       "AUX2",
+       "AUX3",
+       "AUX4",
+       "AUX5",
+       "AUX6",
+       "AUX7",
+       "AUX8",
+       "AUX9",
+       "AUX10",
+       "AUX11",
+       "AUX12",
+       "AUX13",
+       "AUX14",
+       "AUX15"
+      ]
+     }
+    ]
+   }
+  }
+ }
+]

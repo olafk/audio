@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Channel Picker
+GenericName=Audio channel selector
+Comment=Expose selected channels of a multichannel audio interface as a virtual input
+Exec=/opt/dev/audio/channel-picker
+Icon=audio-input-microphone
+Categories=AudioVideo;Audio;Mixer;
+Keywords=pipewire;channels;interface;recording;
